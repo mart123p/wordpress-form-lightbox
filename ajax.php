@@ -24,7 +24,7 @@ function validateInput($optionName){
 		'_colorbox_escKey',
 		'_menu_object_nos',
 		'_menu_obj_'];
-	return (in_array($optionName,$requests));
+	return (in_array($optionName,$requests) && is_admin());
 
 }
 
